@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: registry.hanubes.han/test
+          image: registry.hanubes.han/test:latest
 
           resources:
             requests:
