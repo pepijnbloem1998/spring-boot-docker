@@ -3,6 +3,7 @@ ARG JAR_FILE=build/libs/*.jar
 COPY ${JAR_FILE} app.jar
 
 RUN mkdir destination-dir-for-add
+RUN mkdir test123
 ADD sample.tar.gz /destination-dir-for-add
 
 ENTRYPOINT ["java","-jar","/app.jar"]
